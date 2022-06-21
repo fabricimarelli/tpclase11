@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="mediaquery.css">
+        <script src="app.js"></script>
+        <title>Parcial 1</title>
+    </head>
+    <body>
+       <header class="header">
+            <h1>Formulario Parcial</h1> 
+            <img src="https://cdn-icons-png.flaticon.com/512/2875/2875409.png" alt="Logo">
+       </header>
+       <section>
+            <div class="form-conteiner">
+                <form id="frm">
+                    <div class="row">
+                        <div class="text-box">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Ingrese nombre">
+                            <p id="error-nombre" class="ocultar-error">Minimo 3 caracteres</p>
+                            <label for="apellido">Apellido:</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Ingrese apellido">
+                            <p id="error-apellido" class="ocultar-error">Minimo 3 caracteres</p>
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" id="email" placeholder="TuEmail@ejemplo.com">
+                            <p id="error-email" class="ocultar-error">Ingrese un email valido</p>
+                            <label for="edad">Edad:</label>
+                            <input name="edad" id="edad" placeholder="Ingrese edad">
+                            <p id="error-edad" class="ocultar-error">Ingrese numero entre 1 y 99</p>
+                            <div class="select-pais">
+                                <legend class="legend2">País:</legend>
+                                <select id="pais" name="pais">
+                                    <option value="argentina">Argentina</option>
+                                    <option value="uruguay">Uruguay</option>
+                                    <option value="chile">Chile</option>
+                                    <option value="paraguay">Paraguay</option>
+                                    <option value="bolivia">Bolivia</option>
+                                    <option value="brasil">Brasil</option>
+                                    <option value="peru">Peru</option>
+                                </select>
+                            </div>
+        
+                        </div>
+                        <div class="fieldset-cont">
+                            <fieldset class="field-sexo">
+                                <legend>Sexo</legend>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="male" name="sexo" value="Masculino">
+                                        <label for="male">Masculino</label>  
+                                    </li> 
+                                    <li>
+                                        <input type="radio" id="female" name="sexo" value="Femenino">
+                                        <label for="female">Femenino</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="other" name="sexo" value="Otro">
+                                        <label for="other">Otro</label>
+                                    </li>
+                                </ul>
+                                <p id="error-sexo" class="ocultar-error">Seleccione sexo</p>
+                            </fieldset>
+                            <fieldset class="field-interes">
+                                <legend>Temas de interes</legend>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" id="musica" name="tema" value="Musica">
+                                        <label for="musica">Música</label>    
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="deporte" name="tema" value="Deporte">
+                                        <label for="deporte">Deporte</label>    
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="juegos" name="tema" value="Juegos">
+                                        <label for="juegos">Juegos</label>    
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="tecnologia" name="tema" value="Tecnologia">
+                                        <label for="tecnologia">Tecnología</label>    
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="otros" name="tema" value="Otros">
+                                        <label for="otros">Otros</label>
+                                    </li>
+                                </ul>
+                                <p id="error-tema" class="ocultar-error">Seleccione al menos un tema</p>
+                            </fieldset>
+                        </div>
+                        <div class="comentarios"> 
+                            <label for="comentario">Comentario:</label>
+                            <textarea class="input_textarea" type="text" id="comentario" name="comentario" placeholder="Escriba aquí el comentario"></textarea>
+                        </div>  
+
+                    </div>
+                    
+                    <div class="botones">
+                        <input type="submit" id="submit" name="submit" value="Enviar">
+                        <input type="reset" id="reset" name="reset">
+                    </div>
+                </form>
+            </div>
+            
+            <div id="modal-exito" class="modal">
+
+                <div class="modal-content">
+                  <span class="close">&times;</span>
+                  <p id="mensaje_parpadea">Registrado con éxito!</p>
+                </div>
+              
+            </div>
+
+        </section>
+        <footer>
+            <P>Fabrizio Cimarelli</P>
+        </footer>
+    </body>
+</html>
+
